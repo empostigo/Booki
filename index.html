@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/18309a545c.js" crossorigin="anonymous"></script>
+  <title>Booki - Digits Demo</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <img id="logo" src="images/logo/Booki.png" alt="Logo Booki">
+    <nav class="menu">
+      <a href="#accommodations">Hébergements</a>
+      <a href="#activities">Activités</a>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="find">
+      <div>
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <p class="normal">En plein centre-ville ou en pleine nature</p>
+      </div>
+      <form class="search">
+        <label for="city" id="styled_icon">
+          <i id="location" class="fa-solid fa-location-dot"></i>
+        </label>
+        <input type="text" id="city" name="city" value="Marseille, France">
+        <button type="button" class="bbutton large">Rechercher</button>
+        <button type="button" class="magnifying large">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div id="filters">
+        <p class="large">Filtres</p>
+        <div class="fbuttons">
+          <div class="split">
+            <button class="filtering" type="button">
+              <i class="fa-solid fa-money-bill-wave blue"></i>
+              <span class="filters">économique</span>
+            </button>
+            <button class="filtering" type="button">
+              <i class="fa-solid fa-person blue"></i>
+              <span class="filters">familial</span>
+            </button>
+          </div>
+          <div class="split">
+            <button class="filtering" type="button">
+              <i class="fa-solid fa-heart blue"></i>
+              <span class="filters">romantique</span>
+            </button>
+            <button class="filtering" type="button">
+              <i class="fa-sharp fa-solid fa-fire blue"></i>
+              <span class="filters not-capitalized">Nos pépites</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="tip">
+        <i class="fa-solid fa-info blue"></i>
+        <p class="normal">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <!-- section "Hébergements à Marseille" -->
+      <section id="accommodations">
+        <h2>Hébergements à Marseille</h2>
+        <div class="hcontainer">
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/hotel-du-port/2_large.jpg  2736w,
+                    images/hebergements/hotel-du-port/3_medium.jpg 1368w,
+                    images/hebergements/hotel-du-port/4_small.jpg   684w
+                  " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/hotel-du-port/1_xlarge.jpg" alt="Hôtel du port">
+              <div class="description">
+                <h3>Hôtel du port</h3>
+                <p class="small">Nuit à partir de 52€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/chez-amina/2_large.jpg  1944w,
+                    images/hebergements/chez-amina/3_medium.jpg  972w,
+                    images/hebergements/chez-amina/4_small.jpg   486w
+                  " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/chez-amina/1_xlarge.jpg" alt="Hôtel Chez Amina">
+              <div class="description">
+                <h3>Hôtel Chez Amina</h3>
+                <p class="small">Nuit à partir de 96€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/les-mouettes/2_large.jpg  3000w,
+                    images/hebergements/les-mouettes/3_medium.jpg 1500w,
+                    images/hebergements/les-mouettes/4_small.jpg   750w
+                    " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/les-mouettes/1_xlarge.jpg" alt="Hôtel Les mouettes">
+              <div class="description">
+                <h3>Hôtel Les mouettes</h3>
+                <p class="small">Nuit à partir de 76€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/hotel-mer/2_large.jpg  2000w,
+                    images/hebergements/hotel-mer/3_medium.jpg 1000w,
+                    images/hebergements/hotel-mer/4_small.jpg  500w
+                  " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/hotel-mer/1_xlarge.jpg" alt="Hôtel de la mer">
+              <div class="description">
+                <h3>Hôtel de la mer</h3>
+                <p class="small">Nuit à partir de 46€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/la-canebiere/2_large.jpg  2997w,
+                    images/hebergements/la-canebiere/3_medium.jpg 1499w,
+                    images/hebergements/la-canebiere/4_small.jpg   750w
+                  " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/la-canebiere/1_xlarge.jpg" alt="Auberge la Canebière">
+              <div class="description">
+                <h3>Auberge la Canebière</h3>
+                <p class="small">Nuit à partir de 25€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="hcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/le-panier/2_large.jpg  2606w,
+                    images/hebergements/le-panier/3_medium.jpg 1303w,
+                    images/hebergements/le-panier/4_small.jpg   652w
+                  " sizes="(max-width: 1440px) 17vw, (max-width: 1024px) 26vw, (max-width: 768px) 90vw"
+                src="images/hebergements/le-panier/1_xlarge.jpg" alt="Auberge Le Panier">
+              <div class="description">
+                <h3>Auberge Le Panier</h3>
+                <p class="small">Nuit à partir de 23€</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <p class="large">Afficher plus</p>
+      </section>
+
+      <!-- aside "Les plus populaires"-->
+      <aside class="popular">
+        <div id="popular">
+          <h2>Les plus populaires</h2>
+          <i class="fa-solid fa-chart-line blue"></i>
+        </div>
+        <div class="vcontainer">
+          <article class="vcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/le-soleil-du-matin/2_large.jpg  2125w,
+                    images/hebergements/le-soleil-du-matin/3_medium.jpg 1063w,
+                    images/hebergements/le-soleil-du-matin/4_small.jpg   532w
+                  " sizes="(max-width: 1440px) 8.5vw, (max-width: 1024px) 9vw, (max-width: 768px) 30vw"
+                src="images/hebergements/le-soleil-du-matin/1_xlarge.jpg" alt="Hôtel Le soleil du matin">
+              <div class="verticard">
+                <div>
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p class="small">Nuit à partir de 128€</p>
+                </div>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="vcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/au-coeur-de-leau/2_large.jpg  2016w,
+                    images/hebergements/au-coeur-de-leau/3_medium.jpg 1008w,
+                    images/hebergements/au-coeur-de-leau/4_small.jpg   504w
+                  " sizes="(max-width: 1440px) 8.5vw, (max-width: 1024px) 9vw, (max-width: 768px) 30vw"
+                src="images/hebergements/au-coeur-de-leau/1_xlarge.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
+              <div class="verticard">
+                <div>
+                  <h3>Chambres d'hôtes Au coeur de l'eau</h3>
+                  <p class="small">Nuit à partir de 71€</p>
+                </div>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="vcards">
+            <a href="#">
+              <img srcset="
+                    images/hebergements/bleu-et-blanc/2_large.jpg  2000w,
+                    images/hebergements/bleu-et-blanc/3_medium.jpg 1000w,
+                    images/hebergements/bleu-et-blanc/4_small.jpg   500w
+                  " sizes="(max-width: 1440px) 8.5vw, (max-width: 1024px) 9vw, (max-width: 768px) 30vw"
+                src="images/hebergements/bleu-et-blanc/1_xlarge.jpg" alt="Hôtel Bleu et Blanc">
+              <div class="verticard">
+                <div>
+                  <h3>Hôtel Bleu et Blanc</h3>
+                  <p class="small">Nuit à partir de 68€</p>
+                </div>
+                <div class="stars">
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star blue"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <!-- section "Activités à Marseille" -->
+    <section id="activities">
+      <h2>Activités à Marseille</h2>
+      <div id="scards">
+        <div class="simple_card">
+          <a href="#">
+            <img srcset="
+                    images/activites/vieux-port/2_large.jpg  2808w,
+                    images/activites/vieux-port/3_medium.jpg 1404w,
+                    images/activites/vieux-port/4_small.jpg   702w
+                  " sizes="(max-width: 1440px) 21vw, (max-width: 1024px) 25vw, (max-width: 768px) 84vw"
+              src="images/activites/vieux-port/1_xlarge.jpg" alt="Vieux-Port">
+            <h3>Vieux-Port</h3>
+          </a>
+        </div>
+        <div class="simple_card">
+          <a href="#">
+            <img srcset="
+                    images/activites/pomegues/2_large.jpg  1422w,
+                    images/activites/pomegues/3_medium.jpg 711w,
+                    images/activites/pomegues/4_small.jpg   356w
+                  " sizes="(max-width: 1440px) 21vw, (max-width: 1024px) 25vw, (max-width: 768px) 84vw"
+              src="images/activites/pomegues/1_xlarge.jpg" alt="Fort de Pomègues">
+            <h3>Fort de Pomègues</h3>
+          </a>
+        </div>
+        <div class="simple_card">
+          <a href="#">
+            <img srcset="
+                    images/activites/calanques/2_large.jpg  2423w,
+                    images/activites/calanques/3_medium.jpg 1212w,
+                    images/activites/calanques/4_small.jpg   606w
+                  " sizes="(max-width: 1440px) 21vw, (max-width: 1024px) 25vw, (max-width: 768px) 84vw"
+              src="images/activites/calanques/1_xlarge.jpg" alt="Parc national des Calanques">
+            <h3>Parc national des Calanques</h3>
+          </a>
+        </div>
+        <div class="simple_card">
+          <a href="#">
+            <img srcset="
+                    images/activites/notre-dame-de-la-garde/2_large.jpg  2356w,
+                    images/activites/notre-dame-de-la-garde/3_medium.jpg 1178w,
+                    images/activites/notre-dame-de-la-garde/4_small.jpg   589w
+                  " sizes="(max-width: 1440px) 21vw, (max-width: 1024px) 25vw, (max-width: 768px) 84vw"
+              src="images/activites/notre-dame-de-la-garde/1_xlarge.jpg" alt="Notre-Dame-de-la-Garde">
+            <h3>Notre-Dame-de-la-Garde</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="group">
+      <h4>&Agrave; propos</h4>
+      <div class="links">
+        <a href="#" class="normal">Fonctionnement du site</a>
+        <a href="#" class="normal">Conditions générales</a>
+        <a href="#" class="normal">Données et confidentialité</a>
+      </div>
+    </div>
+    <div class="group">
+      <h4>Nos hébergements</h4>
+      <div class="links">
+        <a href="" class="normal">Charte qualité</a>
+        <a href="" class="normal">Proposer votre hôtel</a>
+      </div>
+    </div>
+    <div class="group">
+      <h4>Assistance</h4>
+      <div class="links">
+        <a href="" class="normal">Centre d'aide</a>
+        <a href="" class="normal">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
