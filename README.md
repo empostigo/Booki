@@ -5,5 +5,3 @@ Booki is a single-page website created from three figma mockups. I made it for t
 Made in desktop first, it was a real challenge, but very instructive.
 
 You can visit it at the [github page](https://empostigo.github.io/Booki/)
-
-Btw, I'm not the author of the models.
